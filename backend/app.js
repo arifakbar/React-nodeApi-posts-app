@@ -59,7 +59,7 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    "mongodb+srv://user_1:pHk6nhwkkL14tOz4@udemy-cluster.qubpg.mongodb.net/messages?retryWrites=true&w=majority"
+    "mongodb+srv://username:password@udemy-cluster.qubpg.mongodb.net/db-name?retryWrites=true&w=majority"
   )
   .then((result) => {
     const server = app.listen(8080);
